@@ -6,7 +6,12 @@ package com.johnmillercoding.SimUniversityMiller;
  * @version 1.0.1
  * Class to model a faculty member.
  */
-public class Faculty extends Employee{
+public class Faculty extends Employee implements Changeable {
+
+    // Constants
+    public static final String RANK_PROFESSOR = "professor";
+    public static final String RANK_ASSOCIATE_PROFESSOR = "associate professor";
+    public static final String RANK_ASSISTANT_PROFESSOR = "assistant professor";
 
     // Instance variables
     private String rank;
@@ -27,4 +32,14 @@ public class Faculty extends Employee{
         this.rank = rank;
     }
 
+    @Override
+    public void changeName(String fName, String lName) {
+        this.setfName(fName);
+        this.setlName(lName);
+    }
+
+    @Override
+    public String toString(){
+        return rank;
+    }
 }
