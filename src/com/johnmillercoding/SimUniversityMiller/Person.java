@@ -15,7 +15,7 @@ abstract class Person{
      * Gets the person's first name.
      * @return the name.
      */
-    private String getfName() {
+    public String getfName() {
         return fName;
     }
 
@@ -31,7 +31,7 @@ abstract class Person{
      * Gets the person's last name.
      * @return the name.
      */
-    private String getlName() {
+    public String getlName() {
         return lName;
     }
 

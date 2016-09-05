@@ -121,5 +121,12 @@ class Main {
         for (Person person : persons){
             System.out.println(person.toString());
         }
+
+        System.out.println("\n\n" + student.getfName() + " " + student.getlName());
+        System.out.println(faculty.getfName() + " " + faculty.getlName());
+        student.changeName("Donald", "Trump");
+        faculty.changeName("Hillary", "Clinton");
+        System.out.println("\n\n" + student.getfName() + " " + student.getlName());
+        System.out.println(faculty.getfName() + " " + faculty.getlName());
     }
 }
