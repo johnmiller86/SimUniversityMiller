@@ -6,13 +6,13 @@ package com.johnmillercoding.SimUniversityMiller;
  * @version 1.0.1
  * Class to model a student.
  */
-public class Student extends Person implements Changeable {
+class Student extends Person implements Changeable {
 
     // Constants
-    public static final String YEAR_FRESHMAN = "freshman";
+    static final String YEAR_FRESHMAN = "freshman";
     public static final String YEAR_SOPHMORE = "sophmore";
-    public static final String YEAR_JUNIOR = "junior";
-    public static final String YEAR_SENIOR = "senior";
+    static final String YEAR_JUNIOR = "junior";
+    static final String YEAR_SENIOR = "senior";
 
     // Instance variables
     private String year;
@@ -29,7 +29,7 @@ public class Student extends Person implements Changeable {
      * Sets the student's year.
      * @param year the year.
      */
-    public void setYear(String year) {
+    void setYear(String year) {
         this.year = year;
     }
 
@@ -41,6 +41,6 @@ public class Student extends Person implements Changeable {
 
     @Override
     public String toString(){
-        return year;
+        return "Type: " + this.getClass().getSimpleName() + " Name: " + this.getfName() + " " + this.getlName() + " Phone: " + this.getPhone() + " Email: " + this.getEmail() + " Year: " + year;
     }
 }

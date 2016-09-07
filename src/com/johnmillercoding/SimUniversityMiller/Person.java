@@ -15,7 +15,7 @@ abstract class Person{
      * Gets the person's first name.
      * @return the name.
      */
-    public String getfName() {
+    String getfName() {
         return fName;
     }
 
@@ -23,7 +23,7 @@ abstract class Person{
      * Sets the person's first name.
      * @param fName the name.
      */
-    public void setfName(String fName) {
+    void setfName(String fName) {
         this.fName = fName;
     }
 
@@ -31,7 +31,7 @@ abstract class Person{
      * Gets the person's last name.
      * @return the name.
      */
-    public String getlName() {
+    String getlName() {
         return lName;
     }
 
@@ -39,7 +39,7 @@ abstract class Person{
      * Sets the person's last name.
      * @param lName the name.
      */
-    public void setlName(String lName) {
+    void setlName(String lName) {
         this.lName = lName;
     }
 
@@ -47,7 +47,7 @@ abstract class Person{
      * Gets the person's phone number.
      * @return the phone number.
      */
-    public String getPhone() {
+    String getPhone() {
         return phone;
     }
 
@@ -55,7 +55,7 @@ abstract class Person{
      * Sets the person's phone number.
      * @param phone the phone number.
      */
-    public void setPhone(String phone) {
+    void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -63,7 +63,7 @@ abstract class Person{
      * Gets the person's email.
      * @return the email.
      */
-    public String getEmail() {
+    String getEmail() {
         return email;
     }
 
@@ -71,12 +71,7 @@ abstract class Person{
      * Sets the person's email.
      * @param email the email.
      */
-    public void setEmail(String email) {
+    void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    public String toString(){
-        return getfName() + " " + getlName();
     }
 }

@@ -118,15 +118,21 @@ class Main {
         persons.add(staff2);
 
         // Output
+        System.out.println("Calling toString on all objects...");
         for (Person person : persons){
             System.out.println(person.toString());
         }
 
-        System.out.println("\n\n" + student.getfName() + " " + student.getlName());
-        System.out.println(faculty.getfName() + " " + faculty.getlName());
+        // Demonstrating changeable method
+        System.out.println();
+        System.out.println("This student and faculty member are getting name changes...");
+        System.out.println(student.toString());
+        System.out.println(faculty.toString());
         student.changeName("Donald", "Trump");
         faculty.changeName("Hillary", "Clinton");
-        System.out.println("\n\n" + student.getfName() + " " + student.getlName());
-        System.out.println(faculty.getfName() + " " + faculty.getlName());
+        System.out.println();
+        System.out.println("The names have been changed...");
+        System.out.println(student.toString());
+        System.out.println(faculty.toString());
     }
 }
